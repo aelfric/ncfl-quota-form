@@ -70,12 +70,6 @@ function App() {
     quota: string;
   } | null>(null);
   const topForms = formObj.fields;
-  const lunchOpts = formObj.fields.slice(6);
-
-  const chunks = [];
-  for (let i = 0; i < lunchOpts.length; i += 6) {
-    chunks.push(lunchOpts.slice(i, i + 6));
-  }
 
   async function handleSubmit(data: FormData) {
     const u = new URLSearchParams();
@@ -209,18 +203,21 @@ function App() {
         <p>
           <label>
             {topForms[0].label}
-            <select
+            <input
               name={`entry.${topForms[0].widgets[0].id}`}
               id={`${topForms[0].id}`}
               required={true}
-            >
+              autoComplete="off"
+              list="diocese"
+            />
+            <datalist id="diocese">
               <option>Please choose...</option>
               {dioceses.map((d) => (
                 <option value={d} key={d}>
                   {d}
                 </option>
               ))}
-            </select>
+            </datalist>
           </label>
         </p>
         <p key={topForms[1].id}>
