@@ -1,0 +1,84 @@
+{
+    "title": "NCFL 2026-27 Quotas",
+    "header": "",
+    "desc": "",
+    "path": "/forms",
+    "action": "e/1FAIpQLSfoj7dacQue244MabgKna-hkMQgk2bQ7oKuYISz6LYuzKhdaA",
+    "fbzx": "-738204405051292862",
+    "sectionCount": 1,
+    "askEmail": false,
+    "fields": [
+        {
+            "id": 1019431810,
+            "label": "Diocese",
+            "desc": "",
+            "typeid": 0,
+            "widgets": [
+                {
+                    "id": "1395604009",
+                    "required": true
+                }
+            ]
+        },
+        {
+            "id": 1010365642,
+            "label": "Contact Name",
+            "desc": "",
+            "typeid": 0,
+            "widgets": [
+                {
+                    "id": "298603989",
+                    "required": true
+                }
+            ]
+        },
+        {
+            "id": 1320574964,
+            "label": "Contact Email",
+            "desc": "",
+            "typeid": 0,
+            "widgets": [
+                {
+                    "id": "248834863",
+                    "required": true
+                }
+            ]
+        },
+        {
+            "id": 1813713150,
+            "label": "Contact Phone",
+            "desc": "",
+            "typeid": 0,
+            "widgets": [
+                {
+                    "id": "1482717289",
+                    "required": true
+                }
+            ]
+        },
+        {
+            "id": 617374700,
+            "label": "Invoice Number",
+            "desc": "",
+            "typeid": 0,
+            "widgets": [
+                {
+                    "id": "179487319",
+                    "required": true
+                }
+            ]
+        },
+        {
+            "id": 2065679702,
+            "label": "Quota",
+            "desc": "",
+            "typeid": 0,
+            "widgets": [
+                {
+                    "id": "1433769601",
+                    "required": true
+                }
+            ]
+        }
+    ]
+}
