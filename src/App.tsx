@@ -211,7 +211,6 @@ function App() {
               list="diocese"
             />
             <datalist id="diocese">
-              <option>Please choose...</option>
               {dioceses.map((d) => (
                 <option value={d} key={d}>
                   {d}
