@@ -4,7 +4,7 @@
     "desc": "",
     "path": "/forms",
     "action": "e/1FAIpQLSfoj7dacQue244MabgKna-hkMQgk2bQ7oKuYISz6LYuzKhdaA",
-    "fbzx": "-738204405051292862",
+    "fbzx": "3680732615452226142",
     "sectionCount": 1,
     "askEmail": false,
     "fields": [
@@ -76,6 +76,18 @@
             "widgets": [
                 {
                     "id": "1433769601",
+                    "required": true
+                }
+            ]
+        },
+        {
+            "id": 850549440,
+            "label": "Payment Method",
+            "desc": "",
+            "typeid": 0,
+            "widgets": [
+                {
+                    "id": "2091925394",
                     "required": true
                 }
             ]

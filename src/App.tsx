@@ -249,6 +249,25 @@ function App() {
             />
           </label>
         </p>
+        <fieldset key={topForms[6].id}>
+          <legend>Payment Method</legend>
+          <label>
+            <input
+              type="radio"
+              value="zelle"
+              name={`entry.${topForms[6].widgets[0].id}`}
+            />
+            Zelle
+          </label>
+          <label>
+            <input
+              type="radio"
+              value="check"
+              name={`entry.${topForms[6].widgets[0].id}`}
+            />
+            Check
+          </label>
+        </fieldset>
         <input
           type="hidden"
           id={`${topForms[4].id}`}
@@ -271,12 +290,56 @@ function App() {
             </label>
           ))}
         </fieldset>
-        <div>
-          <p>Mail all checks to:</p>
-          <Address />
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            marginBottom: "1rem",
+          }}
+        >
+          <div style={{ width: "50%" }}>
+            <p>
+              <img src="icons8-envelope.svg" title="Zelle Logo" />
+              Mail all checks to:
+            </p>
+            <Address />
+          </div>
+          <div style={{ width: "50%" }}>
+            <p>
+              <img src="icons8-zelle.svg" title="Zelle Logo" />
+              Or pay via Zelle. Scan the below QR code with your Bank App.
+            </p>
+            <p>
+              <strong>National Catholic Forensic League, Inc.</strong>
+              <br />
+              ncfl1951
+            </p>
+            <img
+              src="zelle-qr.png"
+              title="Zelle QR Code"
+              style={{ maxWidth: "200px" }}
+            />
+          </div>
         </div>
         <button type="submit">Submit</button>
       </form>
+      <footer>
+        <p>
+          <a target="_blank" href="https://icons8.com/icon/Iirw95F6Nl9c/zelle">
+            Zelle
+          </a>{", "}
+          <a
+            target="_blank"
+            href="https://icons8.com/icon/hf35HOxizD5q/envelope"
+          >
+            Envelope
+          </a>{" "}
+          icons by{" "}
+          <a target="_blank" href="https://icons8.com">
+            Icons8
+          </a>
+        </p>
+      </footer>
     </main>
   );
 }
